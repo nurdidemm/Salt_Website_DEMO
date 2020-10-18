@@ -1,0 +1,154 @@
+<!DOCTYPE html> 
+<head>
+    <link type="text/css" rel="stylesheet" href="index.css">
+    <link href='http://fonts.googleapis.com/css?family=Days+One' rel='stylesheet' type='text/css'>
+    <!-- Media query for wide browser width -->
+    <link rel="stylesheet" media="only screen and (min-width: 1100px)" href="css/wide.css"/>
+    <!-- Media query for narrow browser width -->
+    <link rel="stylesheet" media="only screen and (max-width: 860px)" href="css/narrow.css"/>
+
+    
+    <!-- LEVICON -->
+    <!-- <link rel="icon" 
+      type="image/png" 
+      href="images/levicon.png"> -->
+    
+    <!-- Media query for smartphones -->
+    <!-- <link rel="stylesheet" media="only screen and (max-device-width: 568px)" href="mobile.css"/> -->
+    <!-- Media query for narrow browser width -->
+    <!-- <link rel="stylesheet" media="only screen and (max-width: 568px)" href="mobile.css"/> -->
+</head>
+
+<body>
+
+    <header>
+        <section id="slideContainer">
+            <p id="myText"> ride the wind </p>
+            <img id="mySlide" src="images/S0.png" />
+        </section>
+    </header>
+
+    <nav>
+        <div id="titleBox"><h1 id="title"> S A L T </h1></div>
+        <div id ="titleBox2"><h3 id="title2"> I M B R O S</h3></div>
+        <dl class="list sashimi">
+            <dt>     <!-- navicon -->
+                <svg version="1.1" id="navicon" class="toggle" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                 width="300px" height="300px" viewBox="-3 -2.75 6.5 6" enable-background="new 0 0 300 300" xml:space="preserve">
+            
+                    <path class="path" fill="none" stroke="#000" stroke-width="0.15" stroke-miterlimit="10" d="
+                    M 0 0
+                    C 0.043 0 0.082 -0.035 0.088 -0.088
+                    C 0.095 -0.145 0.064 -0.209 0 -0.25
+                    C -0.07 -0.295 -0.169 -0.304 -0.265 -0.265
+                    C -0.371 -0.222 -0.459 -0.127 -0.5 0
+                    C -0.544 0.139 -0.526 0.3 -0.442 0.442
+                    C -0.351 0.595 -0.192 0.709 0 0.75
+                    C 0.206 0.794 0.431 0.749 0.619 0.619
+                    C 0.819 0.48 0.959 0.258 1 0
+                    C 1.043 -0.273 0.972 -0.561 0.795 -0.795
+                    C 0.61 -1.043 0.324 -1.209 0 -1.25
+                    C -0.339 -1.293 -0.691 -1.195 -0.972 -0.972
+                    C -1.266 -0.739 -1.459 -0.390 -1.5 0
+                    C -1.543 0.406 -1.419 0.821 -1.149 1.149
+                    C -0.869 1.49 -0.456 1.709 0 1.75
+                    C 0.472 1.793 0.95 1.642 1.326 1.326
+                    C 1.713 0.999 1.958 0.522 2 0
+                    C 2.043 -0.538 1.866 -1.08 1.503 -1.503
+                    C 1.129 -1.937 0.589 -2.208 0 -2.25
+                    C -0.605 -2.293 -1.21 -2.09 -1.679 -1.679
+                    C -2.161 -1.259 -2.458 -0.655 -2.5 0
+                    C -2.543 0.671 -2.313 1.34 -1.856 1.856
+                    C -1.388 2.384 -0.721 2.708 0 2.75
+                    C 0.737 2.793 1.47 2.537 2.033 2.033
+                    C 2.608 1.518 2.958 0.788 3 0"/>
+            
+                </svg></dt>
+            <dd><a href="#">Home Page</a></dd>
+            <dd><a href="#">Who We Are</a></dd>
+            <dd><a href="#">Rooms</a></dd>
+            <dd><a href="#">Spa & Wellness</a></dd>
+            <dd><a href="#">Events</a></dd>
+            <dd><a href="#">Gallery</a></dd>
+            <dd><a href="#">Contact Us</a></dd>
+            <dd><a href="#">More</a></dd>
+        </dl>
+    </nav>
+
+    <article>
+
+    </article>
+    <footer>
+        <fieldset>
+            <label for="checkIn">Check-in: </label> <br class = "small">
+            <input type="date" id="checkIn" value="" />
+        </fieldset>
+        <fieldset>
+            <label for="checkOut"> Check-out </label> <br class = "small">
+            <input type="date" id="checkOut" value="" />
+        </fieldset>
+        <fieldset class="num">
+            <label for="adults"> Adults </label> <br class = "small">
+            <div class="quantity">
+                <input type="number" min="1" max="9" step="1" value="1">
+            </div>        
+        </fieldset>
+        <fieldset class="num">
+            <label for="rooms"> Rooms </label><br class = "small">
+            <div class="quantity">
+                <input type="number" min="1" max="9" step="1" value="1">
+            </div>          
+        </fieldset>
+        <fieldset id="book">
+            <label for="book"> Book Now </label>
+            <img src="images/hotelBell.png" id="bookLogo">
+        </fieldset>
+    </footer>
+
+
+
+
+
+
+
+
+
+
+    <script src="jquery-3.3.1.js"></script>
+    <script type="text/javascript" src="index.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+    <script src="js/dropdown3D.js"></script>
+    <script>
+
+        // The `enabled` flag will be `false` if CSS 3D isn't available
+
+        if ( $.fn.makisu.enabled ) {
+
+            var $sashimi = $( '.sashimi' );
+
+            // Create Makisus
+
+            $sashimi.makisu({
+                selector: 'dd',
+                overlap: 0.2,
+                speed: 0.5
+            });
+
+            // Open all
+            
+            $( '.list' ).makisu( 'close' );
+
+            // Toggle on click
+
+            $( '.toggle' ).on( 'click', function() {
+                $( '.list' ).makisu( 'toggle' );
+            });
+
+        } else {
+
+            $( '.warning' ).show();
+        }
+
+    </script>
+</body>
+</html>

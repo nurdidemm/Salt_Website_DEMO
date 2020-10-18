@@ -1,0 +1,22 @@
+.small {
+    display: none;
+}
+
+.quantity input {
+    height: 20px;
+    margin-left: 20px;
+}
+
+.quantity-button {
+    top: -10px;
+}
+
+footer fieldset {
+    margin-left: 1%;
+    padding-top: 30px;
+    height: 45px;
+
+}
+footer fieldset.num {
+    padding-top: 30px;
+}

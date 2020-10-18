@@ -1,0 +1,576 @@
+body {
+    background-color: #e9dfd5;
+    border: solid;
+    border-color: grey;
+    border-width: 1px;
+    margin: 0px;
+    height: 1800px;
+}
+
+#titleBox {
+    position: absolute;
+    top: 30px;
+    left: 100px;
+    overflow: hidden;
+    width: 0px;
+    height: 70px;
+    /* border: solid;
+    border-color: purple;
+    border-width: 1px; */
+}
+
+h1 {
+    color:  #211a12;
+    font-family: 'Bavro', 'Candara';
+    font-size: 60px;
+    text-shadow: 1px 0.8px  #c8b59d;
+    opacity: 0.8;
+    width: 400px;
+    margin-top: 0px;
+    padding: 10px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+#title {
+    transition: 0.5s;
+}
+
+#titleBox2 {
+    position: absolute;
+    top: 50px;
+    left: 360px;
+    overflow: hidden;
+    width: 0px;
+    height: 50px;
+    /* border: solid;
+    border-color: purple;
+    border-width: 1px; */
+    color: #52422e;
+    font-family: 'Barlow Condensed Light', 'Candara';
+    font-size: 15px;
+    opacity: 0.9;
+    padding: 0px;
+    text-shadow: 0.2px 0.4px  #211a12;
+}
+
+#title2 {
+    width: 100px;
+}
+
+header {
+    /* border: solid;
+    border-width: 2px;
+    border-color: red; */
+    height: 750px;
+    z-index: -1;
+}
+
+nav {
+    /* border: solid;
+    border-color: green;
+    border-width: 2px; */
+    width: 100%;
+    margin: 0px;
+    position: fixed;
+    top: 0px;
+    height: 100px;
+    z-index: 2;
+}
+
+footer {
+    width: 100%;
+    margin: 0px;
+    background-color: blue;
+    opacity: 0.7;
+    /* border: solid;
+    border-width: 2px;
+    border-color: yellow; */
+    height: 70px;
+    position: absolute;
+    bottom: -75px;
+    overflow: visible;
+}
+
+footer fieldset {
+    display: block;
+    float: left;
+    width: auto;
+    overflow: auto;
+    height: 57px;
+    margin-left: 3%;
+    padding-top: 20px;
+    border-color: transparent;
+}
+
+footer fieldset.num {
+    padding-top: 15px;
+}
+
+footer {
+    width: 100%;
+    margin: 0px;
+    background: linear-gradient(to bottom, rgba(25, 27, 27, 0.8) 0%,rgba(0,0,0,1) 100%);
+    opacity: 0.7;
+    height: 90px;
+    position: absolute;
+    bottom: -75px;
+    overflow: hidden;
+}
+
+footer fieldset label {
+    color: white;
+    font-size: 20px;
+    font-family: 'Barlow Condensed Light', 'Candara';
+    margin-left: 3px;
+}
+
+footer fieldset#book {
+    position: none;
+    transition-duration: 0.4s;
+    float: right;
+    overflow: visible;
+    margin-right: -5px;
+    background: #7d1b08;
+    border-radius: 0px 0px 0px 0px;
+    width: 140px;
+    height: 47px;
+    padding-top: 30px;
+    top: 0px;
+    left: none;
+}
+
+footer fieldset#book #bookLogo {
+    object-fit: cover;
+    position: relative;
+    width: 30px;
+    margin-left: 10px;
+    top: 0px;
+    left: 0px;
+}
+
+/* -------------------------------------------------------------------------------------------------------- */
+/* INPUT NUMBER STYLING */
+/* -------------------------------------------------------------------------------------------------------- */
+
+  .quantity {
+    float: right;
+  }
+  
+  input[type=number]::-webkit-inner-spin-button,
+  input[type=number]::-webkit-outer-spin-button
+  {
+    -webkit-appearance: none;
+    margin: 0px;
+
+  }
+  
+  input[type=number]
+  {
+    -moz-appearance: textfield;
+  }
+  
+  .quantity input {
+    width: 38px;
+    height: 42px;
+    line-height: 1.65;
+    float: left;
+    padding: 0;
+    margin: 0;
+    padding-left: 20px;
+    border: 1px solid transparent;
+    background-color: transparent;
+    color: #eee;
+    font-family: 'Barlow Condensed Light', 'Candara' !important;
+    font-size: 25px;
+  }
+  
+  .quantity input:focus {
+    outline: 0;
+  }
+  
+  .quantity-nav {
+    float: left;
+    position: relative;
+    height: 0px;
+  }
+  
+  .quantity-button {
+    position: relative;
+    cursor: pointer;
+    width: 20px;
+    text-align: center;
+    color: #eee;
+    font-size: 30px;
+    font-family: 'Barlow Condensed Light', 'Candara' !important;
+    line-height: 1.7;
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+  }
+  
+  .quantity-button.quantity-up {
+    position: absolute;
+    height: 50%;
+    left: 0px;
+  }
+  
+  .quantity-button.quantity-down {
+    position: absolute;
+    left: -50px;
+    height: 50%;
+  }
+
+/* -------------------------------------------------------------------------------------------------------- */
+/* -----------END INPUT NUMBER STYLING --------------------------------------------------------------- */
+/* -------------------------------------------------------------------------------------------------------- */
+
+#slideContainer {
+    height: 700px;
+    /* border: solid;
+    border-color: blue;
+    border-width: 2px; */
+}
+
+#mySlide {
+    height: 100%;
+    width: 100%;
+}
+
+#myText {
+    position: absolute;
+    right: 10%;
+    bottom: 0px;
+    font-size: 30px;
+    color:  #413425;
+    opacity: 0.7;
+    font-family: 'Barlow Condensed Light';
+    text-shadow: 1px 0.8px #82684a;
+}
+
+article {
+    height: 600px;
+    border: solid;
+    border-color: green;
+    border-width: 2px;
+}
+
+
+
+/* -------------------------------------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------------------------------------- */
+/* ------------------------------------------------ FONT-FACE -------------------------------------------------- */
+/* -------------------------------------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------------------------------------- */
+
+@font-face {
+    font-family: 'Barlow Condensed Regular';
+    src: url('fonts/Barlow-CondensedRegular/barlowcondensed-regular-webfont.woff2') format('woff2'),
+         url('fonts/Barlow-CondensedRegular/barlowcondensed-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Barlow Condensed Light';
+    src: url('fonts/Barlow-CondensedLight/barlowcondensed-extralight-webfont.woff2') format('woff2'),
+         url('fonts/Barlow-CondensedLight/barlowcondensed-extralight-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Barlow Regular';
+    src: url('fonts/Barlow-Regular/barlow-regular-webfont.woff2') format('woff2'),
+         url('fonts/Barlow-Regular/barlow-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Barlow ExtraLight';
+    src: url('fonts/Barlow-Light/barlow-extralight-webfont.woff2') format('woff2'),
+         url('fonts/Barlow-Light/barlow-extralight-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+/* -------------------------------------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------------------------------------- */
+/* ------------------------------------------------ 3D-DROPDOWN MENU -------------------------------------------------- */
+/* -------------------------------------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------------------------------------- */
+
+a {
+
+    -webkit-transition: all 250ms cubic-bezier(0.230, 1.000, 0.320, 1.000);
+    -moz-transition: all 250ms cubic-bezier(0.230, 1.000, 0.320, 1.000);
+    -ms-transition: all 250ms cubic-bezier(0.230, 1.000, 0.320, 1.000);
+    -o-transition: all 250ms cubic-bezier(0.230, 1.000, 0.320, 1.000);
+    transition: all 250ms cubic-bezier(0.230, 1.000, 0.320, 1.000);
+    text-decoration: none;
+}
+
+.header h1 {
+
+    letter-spacing: -1px;
+    text-shadow: -2px -1px 1px #fff, 1px 2px 2px rgba(0, 0, 0, 0.2);
+    font-weight: 300;
+    font-size: 36px;
+    margin: 0;
+}
+
+.header h2 {
+
+    text-transform: uppercase;
+    text-shadow: -2px -1px 1px #fff, 1px 1px 1px rgba(0, 0, 0, 0.15);
+    font-weight: 300;
+    font-size: 12px;
+    color: rgba(0,0,0,0.7);
+    margin: 0;
+}
+
+.demo:after {
+
+    box-shadow: 0 1px 16px rgba(0,0,0,0.15);
+    background: #1b1b1b;
+    position: absolute;
+    content: '';
+    height: 10px;
+    width: 100%;
+    top: 0;
+}
+
+/* List styles */
+
+.list {
+
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
+    -o-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    text-transform: uppercase;
+    position: fixed;
+    margin-left: -80px;
+    margin-top: 0px;
+    top: 50px;
+    z-index: 2;
+    transition: 0.5s
+}
+
+.list a {
+
+    display: block;
+    color: #fff;
+}
+
+.list a:hover {
+    text-indent: 20px;
+}
+
+.list dt, .list dd {
+
+    text-indent: 10px;
+    line-height: 55px;
+    background: transparent;
+    margin: 0;
+    height: 55px;
+    width: 270px;
+    color: #fff;
+}
+
+.list dt {
+
+    /* Since we're hiding elements behind here, we need it in 3d */
+    -webkit-transform: translateZ(0.3px);
+    -moz-transform: translateZ(0.3px);
+    -ms-transform: translateZ(0.3px);
+    -o-transform: translateZ(0.3px);
+    transform: translateZ(0.3px);
+    text-shadow: 1px 1px 2px rgba(175, 103, 103, 0.2);
+    font-size: 15px;
+    width: 200px;
+}
+
+.list dd {
+    border-top: 1px dashed rgba(255,255,255,0.3);
+    line-height: 35px;
+    font-size: 11px;
+    height: 35px;
+    margin: 0;
+    width: 200px;
+    text-indent: 30px;
+}
+
+.list dd a {
+    font-family: 'Barlow Regular', 'Candara';
+    font-size: 11px;
+    -webkit-transform: scale(1.2, 1); /* Safari and Chrome */
+    -moz-transform: scale(1.2, 1); /* Firefox */
+    -ms-transform: scale(1.2, 1); /* IE 9+ */
+    -o-transform: scale(1.2, 1); /* Opera */
+    /* border-left: solid;
+    border-color: white;
+    border-width: 2px; */
+}
+
+
+/* UI */
+
+.toggle {
+    border-radius: 3px;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+    line-height: 50px;
+    text-align: center;
+    font-size: 12px;
+    position: absolute;
+    background: transparent;
+}
+
+.toggle:hover {
+}
+
+/* No CSS 3D support warning */
+.warning {
+
+    -webkit-transform: translateZ(2px);
+    -moz-transform: translateZ(2px);
+    -ms-transform: translateZ(2px);
+    -o-transform: translateZ(2px);
+    transform: translateZ(2px);
+
+    background: rgba(255,255,255,0.6);
+    position: fixed;
+    display: none;
+    z-index: 999;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+}
+
+.warning .message {
+
+    box-shadow: 0 1px 8px rgba(0, 0, 0, 0.6);
+    border-radius: 5px;
+    text-align: center;
+    margin-left: -150px;
+    margin-top: -60px;
+    line-height: 1.5;
+    background: #222;
+    font-size: 12px;
+    position: absolute;
+    padding: 10px;
+    width: 280px;
+    color: #fff;
+    left: 50%;
+    top: 50%;
+}
+
+.warning .message h1 {
+
+    font-weight: 300;
+    font-size: 14px;
+}
+
+.warning .message a {
+
+    text-decoration: none;
+    color: #73C8A9;
+}
+
+/* Individual styles */
+
+.sashimi dd, .sashimi a { 
+    background: #7d1b08;
+}
+
+.sashimi dt {
+    opacity: 1; 
+    background: transparent;
+    /* border: solid;
+    border-color: blue;
+    border-width: 2px; */
+}
+
+.sashimi a {
+    opacity: 0.8; 
+}
+
+.sashimi a:hover { background: #96260F; }
+
+.sashimi dd {
+    background: rgba(255,255,255,0.1);
+    opacity: 1;
+}
+
+.sashimi {
+    -webkit-transform: perspective(1200px) rotateY(-40deg) !important;
+    -moz-transform: perspective(1200px) rotateY(-40deg) !important;
+    -ms-transform: perspective(1200px) rotateY(-40deg) !important;
+    -o-transform: perspective(1200px) rotateY(-40deg) !important;
+    transform: perspective(1200px) rotateY(-40deg) !important;
+
+    -webkit-transform-origin: -10% 25%;
+    -moz-transform-origin: -10% 25%;
+    -ms-transform-origin: -10% 25%;
+    -o-transform-origin: -10% 25%;
+    transform-origin: -10% 25%;
+
+    left: 80%;
+}
+
+
+/* -------------------------------------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------------------------------------- */
+/* ------------------------------------------------ SVG SPIRAL -------------------------------------------------- */
+/* -------------------------------------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------------------------------------- */
+
+
+.path {
+    stroke-dasharray: 29;
+    stroke-dashoffset: 29;
+    -webkit-animation: dash 3s linear alternate forwards;
+}
+  
+@-webkit-keyframes dash {
+    from {
+      stroke-dashoffset: 29;
+    }
+    to {
+      stroke-dashoffset: 0;
+    }
+}
+
+svg {
+    width: 60px;
+    height: auto;
+    /* border: solid;
+    border-color: purple;
+    border-width: 1px; */
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+svg #navicon {
+    background-color: transparent;
+}
+
+svg .path {
+    transition: 0.5s;
+}
